@@ -1,0 +1,210 @@
+
+
+===== PAGE 1 =====
+ 
+ 
+  FACULTAD  DE  CIENCIAS  E  INGENIERÍA  CARRERA  DE  INGENIERÍA  DE  SOFTWARE     TEMA:  
+Implementación
+ 
+de
+ 
+un
+ 
+flujo
+ 
+de
+ 
+integración
+ 
+y
+ 
+despliegue
+ 
+continuo
+ 
+usando
+ 
+Github
+ 
+Actions
+ 
+y
+ 
+Docker
+ 
+AUTORES:  
+William
+ 
+Jesús
+ 
+García
+ 
+Sánchez
+ 
+Roberto  Antonio  García  Tauriz  
+ASIGNATURA:  
+Gestión
+ 
+de
+ 
+la
+ 
+Configuración
+ 
+DOCENTE:  
+Ing.
+ 
+Omar
+ 
+Carpio
+ 
+FECHA  DE  ENTREGA:  
+Viernes
+ 
+26
+ 
+de
+ 
+junio
+ 
+de
+ 
+2026
+ 
+PERIODO:  
+Abril
+ 
+2026
+ 
+a
+ 
+Julio
+ 
+2026
+ 
+ 
+MILAGRO-ECUADOR  
+ 
+
+
+===== PAGE 2 =====
+ 
+ 
+SESIÓN  1  –  Preparación  del  entorno  CI   
+Actividad  1:  
+●  Verificar  que  el  proyecto  contenga:  ●  manage.py,  carpeta  project/,  carpeta  app/  ●  requirements.txt  o  Pipfile  ●  Scripts  de  prueba  (por  ejemplo,  python  manage.py  test)  
+Actividad  2:  ●  Crear  una  rama  ci-setup  ●  Configurar  GitHub  Actions  (.github/workflows/ci.yml)  para:  ○  Instalar  dependencias  ○  Ejecutar  python  manage.py  test  Producto:  ●  Archivo  ci.yml  funcional  ●  Captura  de  GitHub  Actions  ejecutando  los  tests  con  éxito  o  fallos  
+ 
+ 
+
+
+===== PAGE 3 =====
+ 
+ 
+  
+ 
+ 
+
+
+===== PAGE 4 =====
+ 
+ 
+ 
+ SESIÓN  2  –  Automatización  del  build  con  Docker  
+Actividad  1:  
+Crear  el  archivo  Dockerfile  para  contenedorización  del  proyecto  Django:  
+●  Basado  en  python:3.10  ●  Instalación  de  dependencias  ●  Configuración  de  ENTRYPOINT  
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE 5 =====
+ 
+ 
+Actividad  2:  
+●  Crear  docker-compose.yml  con:  ●  Contenedor  para  Django  ●  Contenedor  opcional  para  PostgreSQL  ●  Validar  que  el  proyecto  corre  correctamente  en  el  entorno  Docker  
+Producto:  
+●  Archivos  Dockerfile  y  docker-compose.yml  funcionales  ●  Captura  del  sistema  Django  corriendo  en  contenedor  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE 6 =====
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE 7 =====
+ 
+ 
+ 
+SESIÓN  3  –  Simulación  del  despliegue  continuo  
+Actividad  1:  
+Extender  el  flujo  de  GitHub  Actions  para  que:  
+●  Compile  y  construya  la  imagen  Docker  ●  Guarde  el  artefacto  en  GitHub  o  lo  prepare  para  DockerHub  
+(simulado)
+ 
+ 
+ 
+ 
+
+
+===== PAGE 8 =====
+ 
+ 
+Actividad  2:  
+Simular  un  despliegue  en  una  carpeta  externa  del  sistema:  
+●  Descargar  el  proyecto  ●  Ejecutar  con  Docker  Compose  ●  Validar  desde  el  navegador  
+Producto:  
+●  Evidencia  del  contenedor  corriendo  desde  el  flujo  automatizado  ●  Documento  deploy-notes.md  con  los  pasos  de  despliegue  simulado  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE 9 =====
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+===== PAGE 10 =====
+ 
+ 
+SESIÓN  4  –  Validación  y  entrega  del  pipeline  
+Actividad  1:  
+Ejecutar  todo  el  pipeline:  
+●  CI  (test)  ●  Build  (Docker)  ●  Simulación  del  despliegue  
+Actividad  2:  
+●  Crear  documento  técnico  del  pipeline:  ●  Diagrama  del  flujo  CI/CD  ●  Explicación  del  .yml  de  Actions  ●  Recomendaciones  finales  
+Producto:  
+●  PDF  final  “Flujo  CI/CD  para  Django”  ●  Repositorio  actualizado  con:  ●  Código  limpio  ●  Docker  operativo  ●  GitHub  Actions  funcionando  
+ 
+ 
+ 
